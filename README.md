@@ -1,13 +1,3 @@
-Você está correto. Peço desculpas por isso.
-
-O problema ocorreu porque, ao remover os caracteres `#` dos títulos, os links automáticos (âncoras) que o Markdown cria para cada seção foram desativados. A Tabela de Conteúdos precisa desses títulos formatados com `#` para saber para onde apontar.
-
-Para corrigir os links e manter a formatação limpa (sem emojis), a solução é reintroduzir os cabeçalhos (`##`). Eles são essenciais para a funcionalidade da Tabela de Conteúdos.
-
-Abaixo está o código Markdown corrigido, com os links da Tabela de Conteúdos funcionando corretamente.
-
------
-
 # Blockchain Audit Automation – TRES Finance Challenge
 
 Automated reconciliation and audit of wallet/token balances between internal reports and on-chain data (Avalanche C-Chain).

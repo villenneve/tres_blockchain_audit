@@ -83,7 +83,7 @@ This solution was developed as part of a multi-phase technical challenge:
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/yourusername/tres-blockchain-audit.git
+git clone https://github.com/villenneve/tres-blockchain-audit.git
 cd tres-blockchain-audit
 pip install -r requirements.txt
 ````
@@ -150,7 +150,8 @@ MIT License.
 ## 📬 Contact
 
 Created by \[Gilly Lopes].
-For questions, feel free to open an [issue](https://github.com/yourusername/tres-blockchain-audit/issues) or contact via [LinkedIn](https://www.linkedin.com/).
+For questions, feel free to open an [issue](https://github.com/villenneve/tres-blockchain-audit/issues)
+or contact via [LinkedIn](https://www.linkedin.com/in/villenneve).
 
 ---
 
@@ -158,18 +159,6 @@ For questions, feel free to open an [issue](https://github.com/yourusername/tres
 🚀
 
 ---
-
-> Let me know if you want any extra badges, screenshots, or a more advanced usage section!
-> You can copy-paste this into your README.md and update the links/usernames as needed.
-
-```
-
-Se quiser adicionar imagens, exemplos ou badges do GitHub, é só pedir!
-```
-
-
-
-
 
 ````markdown
 ## 🏅 Extra: Value-Added Features & Technical Choices

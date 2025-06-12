@@ -49,7 +49,9 @@ This solution was developed as part of a multi-phase technical challenge:
 2. **Find root causes** using blockchain explorer data.
 3. **Automate** the detection and reporting of future mismatches.
 
-> **Note:** The original challenge required integration with the OKLink API, but the service was not available (API portal returned 404). As a result, CovalentHQ (GoldRush) API was used for reliable and automated on-chain data access.
+> **Note:** The original challenge required integration with the OKLink API, 
+but the service was not available (API portal returned 404). As a result, 
+CovalentHQ (GoldRush) API was used for reliable and automated on-chain data access.
 
 ---
 

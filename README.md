@@ -1,20 +1,18 @@
-**Blockchain Audit Automation – TRES Finance Challenge**
-
------
+# Blockchain Audit Automation – TRES Finance Challenge
 
 Automated reconciliation and audit of wallet/token balances between internal reports and on-chain data (Avalanche C-Chain).
 Developed for the TRES Finance Blockchain Analyst challenge.
 
 -----
 
-**Project Overview**
+## Project Overview
 
 This project automates the reconciliation process between off-chain balance reports and on-chain data using Python and the CovalentHQ (GoldRush) API.
 It was designed to detect mismatches, explain discrepancies, and output an audit report for blockchain finance compliance.
 
 -----
 
-**Table of Contents**
+## Table of Contents
 
   * [Features](https://www.google.com/search?q=%23features)
   * [Context: TRES Finance Challenge](https://www.google.com/search?q=%23context-tres-finance-challenge)
@@ -31,7 +29,7 @@ It was designed to detect mismatches, explain discrepancies, and output an audit
 
 -----
 
-**Features**
+## Features
 
   * Loads internal Excel balance reports with wallets and tokens
   * Fetches live on-chain balances via CovalentHQ API (supports all EVM-compatible chains)
@@ -42,7 +40,7 @@ It was designed to detect mismatches, explain discrepancies, and output an audit
 
 -----
 
-**Context: TRES Finance Challenge**
+## Context: TRES Finance Challenge
 
 This solution was developed as part of a multi-phase technical challenge:
 
@@ -56,7 +54,7 @@ This solution was developed as part of a multi-phase technical challenge:
 
 -----
 
-**Architecture**
+## Architecture
 
 ```
 .
@@ -74,7 +72,7 @@ This solution was developed as part of a multi-phase technical challenge:
 
 -----
 
-**Prerequisites**
+## Prerequisites
 
   * Python 3.9 or above
   * [pip](https://pip.pypa.io/en/stable/)
@@ -83,7 +81,7 @@ This solution was developed as part of a multi-phase technical challenge:
 
 -----
 
-**Installation**
+## Installation
 
 ```bash
 git clone https://github.com/villenneve/tres-blockchain-audit.git
@@ -93,7 +91,7 @@ pip install -r requirements.txt
 
 -----
 
-**Configuration**
+## Configuration
 
 1.  **Create a `.env` file** in the project root:
 
@@ -109,7 +107,7 @@ pip install -r requirements.txt
 
 -----
 
-**Usage**
+## Usage
 
 Simply run:
 
@@ -121,22 +119,22 @@ python main.py
 
 -----
 
-**Output Example**
+## Output Example
 
 | Wallet Address | Token | Expected Balance | Blockchain Balance | Difference | Difference (%) | Status | Possible Solution | Audited At |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 0xABC... | AVAX | 1.235 | 1.235 | 0.000 | 0.00 | OK | No action required | 2025-06-11 |
+| :------------: | :---: | :--------------: | :----------------: | :--------: | :------------: | :----: | :----------------: | :--------: |
+|    0xABC...    |  AVAX |       1.235      |        1.235       |    0.000   |      0.00      |   OK   | No action required | 2025-06-11 |
 
 -----
 
-**API Provider: CovalentHQ (GoldRush)**
+## API Provider: CovalentHQ (GoldRush)
 
   * This solution uses CovalentHQ’s GoldRush API to fetch balances for any wallet and all its tokens on EVM-compatible blockchains.
   * If the OKLink API becomes available in the future, integration can be easily added in `src/routescan_api.py`.
 
 -----
 
-**Notes and Limitations**
+## Notes and Limitations
 
   * **Decimal precision:** All calculations use full token decimals for blockchain-grade accuracy. Reports preserve every significant digit.
   * **API limits:** Free tier of CovalentHQ is subject to rate limits.
@@ -144,13 +142,13 @@ python main.py
 
 -----
 
-**License**
+## License
 
 MIT License.
 
 -----
 
-**Contact**
+## Contact
 
 Created by \[Gilly Lopes].
 For questions, feel free to open an [issue](https://github.com/villenneve/tres-blockchain-audit/issues)
@@ -162,9 +160,9 @@ Good luck, and happy auditing\!
 
 -----
 
-## **Extra: Value-Added Features & Technical Choices**
+## Extra: Value-Added Features & Technical Choices
 
-**How We Addressed the TRES Finance Requirements**
+### How We Addressed the TRES Finance Requirements
 
 **Phase 1: Data Analysis**
 
@@ -184,7 +182,7 @@ Good luck, and happy auditing\!
 
 -----
 
-**Why CovalentHQ Instead of OKLink?**
+### Why CovalentHQ Instead of OKLink?
 
   - The challenge required on-chain validation using [OKLink](https://www.oklink.com).
   - **Why not OKLink?**
@@ -196,7 +194,7 @@ Good luck, and happy auditing\!
 
 -----
 
-**Security, Code Quality & Best Practices**
+### Security, Code Quality & Best Practices
 
   - **API Keys Secured:**
     All secrets (API keys, chain IDs, etc.) are managed via a `.env` file and loaded using [python-dotenv](https://pypi.org/project/python-dotenv/). Never commit secrets to source control\!
@@ -209,7 +207,7 @@ Good luck, and happy auditing\!
 
 -----
 
-**Additional Features**
+### Additional Features
 
   - **Extensible Design:**
     Supports additional wallets, tokens, and new blockchains with simple configuration changes.
@@ -220,14 +218,14 @@ Good luck, and happy auditing\!
 
 -----
 
-**What Makes This Solution Stand Out**
+### What Makes This Solution Stand Out
 
 >   - *High-precision, auditable, and scalable: perfect for institutional blockchain finance.*
 >   - *Ready for future TRES Finance growth—multi-chain, multi-asset, and fully automated.*
 
 -----
 
-**Sample Output**
+### Sample Output
 
 ```plaintext
 Wallet Address              | Token   | Expected Balance | Blockchain Balance | Difference | Difference (%) | Status         | Possible Solution
@@ -238,7 +236,7 @@ Wallet Address              | Token   | Expected Balance | Blockchain Balance | 
 
 -----
 
-**Summary**
+### Summary
 
   * All phases completed with full transparency and automation.
   * If OKLink becomes available, swapping API integrations is trivial.
@@ -246,9 +244,7 @@ Wallet Address              | Token   | Expected Balance | Blockchain Balance | 
 
 -----
 
-**Thank You**
+### Thank You
 
 Thank you for your time and for considering this solution for the TRES Finance challenge\!
 For any questions or to see the code in action, please contact me via GitHub or email.
-
------
